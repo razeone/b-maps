@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -22,13 +23,21 @@
       <a class="navbar-brand" href="#">B-maps</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#!/home">Home</a>
+          <a class="nav-link" ui-sref="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#!/world">World</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Countries</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav float-xs-right">
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref="about">About</a>
         </li>
       </ul>
       <!--
@@ -55,6 +64,7 @@
   -->
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-toastr/dist/angular-toastr.min.js"></script>
   <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/tether/dist/js/tether.min.js"></script>
@@ -64,6 +74,7 @@
   <script src="components/version/interpolate-filter.js"></script>
   <script src="app.js"></script>
   <script src="controllers/home.js"></script>
+  <script src="controllers/login.js"></script>
   <script src="controllers/world.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 angular.module('bMaps', [
     'ui.router',
     'satellizer',
+    'toastr',
     'bMaps.version'
     ])
   .config(function($stateProvider, $urlRouterProvider, $authProvider) {
@@ -43,7 +44,7 @@ angular.module('bMaps', [
       .state('login', {
         url: '/login',
         templateUrl: 'partials/login.html',
-        controller: 'LoginCtrl',
+        controller: 'LoginController',
         resolve: {
           skipIfLoggedIn: skipIfLoggedIn
         }
