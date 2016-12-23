@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+nav {
+	margin-bottom: 20px;
+}
+
 .menu:before {
   content: "[";
 }
